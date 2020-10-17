@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\.cpio]
+@="7-Zip.cpio"
+
+[-HKEY_CLASSES_ROOT\7-Zip.cpio]
+@="7z Archive"
+
+[-HKEY_CLASSES_ROOT\7-Zip.cpio\DefaultIcon]
+@="C:\\Program Files\\7-Zip\\7z.dll,12"
+
+[-HKEY_CLASSES_ROOT\7-Zip.cpio\shell]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.cpio\shell\open]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.cpio\shell\open\command]
+@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+

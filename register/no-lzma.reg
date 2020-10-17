@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\.lzma]
+@="7-Zip.lzma"
+
+[-HKEY_CLASSES_ROOT\7-Zip.lzma]
+@="7z Archive"
+
+[-HKEY_CLASSES_ROOT\7-Zip.lzma\DefaultIcon]
+@="C:\\Program Files\\7-Zip\\7z.dll,16"
+
+[-HKEY_CLASSES_ROOT\7-Zip.lzma\shell]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.lzma\shell\open]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.lzma\shell\open\command]
+@=""
+

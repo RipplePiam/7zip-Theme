@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\.dmg]
+@="7-Zip.dmg"
+
+[-HKEY_CLASSES_ROOT\7-Zip.dmg]
+@="7z Archive"
+
+[-HKEY_CLASSES_ROOT\7-Zip.dmg\DefaultIcon]
+@="C:\\Program Files\\7-Zip\\7z.dll,17"
+
+[-HKEY_CLASSES_ROOT\7-Zip.dmg\shell]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.dmg\shell\open]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.dmg\shell\open\command]
+@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+

@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\.ntfs]
+@="7-Zip.ntfs"
+
+[-HKEY_CLASSES_ROOT\7-Zip.ntfs]
+@="7z Archive"
+
+[-HKEY_CLASSES_ROOT\7-Zip.ntfs\DefaultIcon]
+@="C:\\Program Files\\7-Zip\\7z.dll,22"
+
+[-HKEY_CLASSES_ROOT\7-Zip.ntfs\shell]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.ntfs\shell\open]
+@=""
+
+[-HKEY_CLASSES_ROOT\7-Zip.ntfs\shell\open\command]
+@=""
