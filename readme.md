@@ -5,6 +5,7 @@
 ## 1.preview
 ### 1.1 filetype preview
 #### 1.1.1 Windows 10 Blue
+
 ![](https://github.com/RipplePiam/7zip-Theme/blob/main/preview/filetype/Windows%2010%20Blue.jpg)
 
 [Download](https://github.com/RipplePiam/7zip-Theme/blob/main/Filetype/Windows%2010%20Blue.zip)
@@ -46,6 +47,7 @@
 [Download](https://github.com/RipplePiam/7zip-Theme/blob/main/Toolbar/Pure.zip)
 
 #### 1.2.6 Windows 10 Blue
+
 ![](https://github.com/RipplePiam/7zip-Theme/blob/main/preview/toolbar/Windows%2010%20Blue.jpg)
 
 [Download](https://github.com/RipplePiam/7zip-Theme/blob/main/Toolbar/Windows%2010%20Blue.zip)
@@ -104,3 +106,25 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\7-Zip.lzma\shell\open\command]
 @=""
 ```
+
+#### 3. Declaration
+
+1、The resources related to this software are collected from the Internet, and the copyright belongs to its developer and author.
+
+2、This software is only for personal learning and communication, please do not use it for any kind of commercial use.
+
+3、You must bear all possible consequences and losses caused by the use of the process.
+
+4、If you have any comments or suggestions during the use, please provide feedback and correction in time.
+
+
+
+**特别声明**
+
+1、本软件相关资源收集自互联网，版权归其开发厂商及作者所有。
+
+2、本软件仅限于个人学习交流，请勿用于任何形式商业用途。
+
+3、您必须自行承担使用过程所有可能引起的后果及损失。
+
+4、使用过程中若有意见或建议，请及时反馈和指正。
