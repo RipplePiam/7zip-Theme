@@ -1,6 +1,6 @@
 # <p align="center">7zip Theme</p>
 
-:earth_asia: [English](./readme.md) | [Chinese](./readme_cn.md)
+:earth_asia: [English](./readme.md) | [中文](./readme_cn.md) 
 
 <br/>
 
@@ -42,7 +42,7 @@ However, people find that these native icons don't seem to satisfy their aesthet
 
 Let's take a look at these icons, :arrow_down: :arrow_down: :arrow_down: , they do look as if they don't quite fit the Windows style.
 
-<img src="preview/original_toolbar.png" alt="original_toolbar" width="450" /> <img src="preview/Showtest_FiletypeIcon.png" alt="filetypeIcons" width="450" /> 
+<img src="preview/original_toolbar.png" alt="original_toolbar" width="400" /> <img src="preview/Showtest_FiletypeIcon.png" alt="filetypeIcons" width="400" /> 
 
 Therefore, there are many beauty lovers in this world who make icons that they think look good.
 

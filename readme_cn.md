@@ -1,8 +1,29 @@
 # <p align="center">7zip Theme</p>
 
-:earth_asia: [English](./readme.md) | [Chinese](./readme_cn.md)
+:earth_asia: [English](./readme.md) | [中文](./readme_cn.md) 
+<br/>
+
+**目录**
+
+---
+
+<a href="#usefor">这是用来干什么的 ?</a> 
+
+<a href="#works">如何使用 ?</a> 
+
+<a href="#preview_download">1. 图标预览及下载</a> 
+
+​    <a href="#fileIcons">1.1 文件图标</a> 
+
+​    <a href="#toolbarIcons">1.2 工具栏图标</a> 
+
+<a href="#register">2. 注册表</a> 
+
+<a href="#declaration">3. 特别声明</a> 
 
 <br/>
+
+<a id="usefor"/>
 
 ## 这是用来干什么的 :question: 
 
@@ -11,14 +32,15 @@
 
 众所周知，7-zip 是一款开源免费且高质量的压缩/解压缩软件。然而当人们循着名声安装好 7-zip ，准备大呼过瘾的时候，却发现 7-zip 为了究极小巧而特意设计的工具栏图标和文件夹图标，好像并不能满足自己的美感。我们看看这些原生图标，:arrow_down: :arrow_down: :arrow_down: ，好像是差点意思。
 
-<img src="preview/original_toolbar.png" alt="original_toolbar" width="450" /> <img src="preview/Showtest_FiletypeIcon.png" alt="filetypeIcons" width="450" /> 
+<img src="preview/original_toolbar.png" alt="original_toolbar" width="400" /> <img src="preview/Showtest_FiletypeIcon.png" alt="filetypeIcons" width="400" /> 
 
 因此，这个世界上有很多爱美的人制作了他们认为好看的图标。
 
 如果你也喜欢，你可以从下方找到对应的资源，及其使用方法！:clap: :clap: :clap: 
 
-
 <br/>
+
+<a id="works"/>
 
 ## :astonished: 如何使用 ？
 
@@ -40,11 +62,13 @@
 > 
 > :space_invader: 对于`非 Windows `用户，如果你感兴趣，可以下载你喜欢的图标组，或fork此仓库，然后自己制作补丁文件:smile: 
 
-
 <br/>
+
+<a id="preview_download"/> 
 
 ## 1. 图标预览及下载
 
+<a id="fileIcons"/> 
 
 ### 1.1 文件图标
 
@@ -72,8 +96,9 @@ Patch: [1900x64](./7z1900x64%20patch/7z.dll) &nbsp;&nbsp; [2107x64](./7z2107x64%
 
 Icon Group: [Download](./Filetype/7-Zip%20Original%20filetype.zip) 
 
-
 <br/>
+
+<a id="toolbarIcons"/> 
 
 ### 1.2 工具栏图标
 
@@ -153,8 +178,9 @@ Icon Group: [Download](./Toolbar/Oxygen%20Refit.zip)
 
 Icon Group: [Download](./Toolbar/7-Zip%20Original%20Toolbar%20Theme.zip) 
 
-
 <br/>
+
+<a id="register"/>
 
 ## 2. 注册表
 
@@ -183,8 +209,9 @@ Windows Registry Editor Version 5.00
 @=""
 ```
 
-
 <br/>
+
+<a id="declaration"/>
 
 ## 3. 特别声明
 
