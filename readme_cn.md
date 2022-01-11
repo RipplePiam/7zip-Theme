@@ -1,5 +1,6 @@
 # <p align="center">7zip Theme</p>
 
+:earth_asia: [English](./readme.md) | [Chinese](./readme_cn.md)
 
 <br/>
 
