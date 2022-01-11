@@ -1,48 +1,49 @@
-# 7zip Theme
-
-[TOC]
+# <p align="center">7zip Theme</p>
 
 
+<br/>
 
-## :question: 这是用来干什么的 ?
+## 这是用来干什么的 :question: 
 
----
 
-这个仓库收集制作了一些 Windows 系统下的压缩文件图标，以及专门用于 [7-zip](https://www.7-zip.org/) 软件的工具栏的替换图标。
+这个仓库收集制作了一些 Windows 系统下的`压缩文件图标`，以及专门用于 [7-zip](https://www.7-zip.org/) 软件的`工具栏的替换图标`。
 
 众所周知，7-zip 是一款开源免费且高质量的压缩/解压缩软件。然而当人们循着名声安装好 7-zip ，准备大呼过瘾的时候，却发现 7-zip 为了究极小巧而特意设计的工具栏图标和文件夹图标，好像并不能满足自己的美感。我们看看这些原生图标，:arrow_down: :arrow_down: :arrow_down: ，好像是差点意思。
 
-<img src="preview/original_toolbar.png" alt="original_toolbar" style="zoom: 60%;" /> <img src="preview/Showtest_FiletypeIcon.png" alt="filetypeIcons" style="zoom:50%;" /> 
+<img src="preview/original_toolbar.png" alt="original_toolbar" width="450" /> <img src="preview/Showtest_FiletypeIcon.png" alt="filetypeIcons" width="450" /> 
 
-所以，这个世界上有很多爱美的人制作了他们认为好看的图标，如果你也喜欢，你可以从下方找到对应的资源，及其使用方法！:clap: :clap: :clap: 
+因此，这个世界上有很多爱美的人制作了他们认为好看的图标。
+
+如果你也喜欢，你可以从下方找到对应的资源，及其使用方法！:clap: :clap: :clap: 
 
 
+<br/>
 
 ## :astonished: 如何使用 ？
 
----
 
 :one: 到 [7-zip](https://www.7-zip.org/) 官网下载 Windows 64 位的安装文件，并安装到你的电脑中；
 
 :two: 在下方找到并下载你喜欢的图标组 ( 文件图标或工具栏图标 ) 补丁文件;
 
 :three: 将下载好的 7z.dll 或 7zFM.exe 文件拷贝到你安装 7-zip 的地方，并替换原有文件;
+<br/>
 
-:warning: 你最好先备份原有的 7z.dll 和 7zFM.exe 文件；
+> :warning: 你最好先备份原有的 7z.dll 和 7zFM.exe 文件；
+> 
+> :warning: 请确保你下载的补丁文件版本，与你安装的 7-zip 版本相匹配；
+> 
+> :+1: 如果你不知道选哪个，我推荐你使用 Windows 10 Default 和 Glyfz 2016 组合，我在他们的标题上加了 :heart_eyes:  他们看起来是这样的:arrow_down: 
+> 
+> <img src="preview/Win10+Glyfz.png" alt="Win10+Glyfz" width="450" /> 
+> 
+> :space_invader: 对于`非 Windows `用户，如果你感兴趣，可以下载你喜欢的图标组，或fork此仓库，然后自己制作补丁文件:smile: 
 
-:warning: 请确保你下载的补丁文件版本，与你安装的 7-zip 版本相匹配；
 
-:space_invader: 对于非 Windows 用户，如果你感兴趣，可以下载你喜欢的图标组，或fork此仓库，然后自己制作补丁文件:smile: 
-
-:+1: 如果你不知道选哪个，我推荐你使用 Windows 10 Default 和 Glyfz 2016 组合，我在他们的标题上加了 :heart_eyes:  他们看起来是这样的:arrow_down: 
-
-<img src="preview/Win10+Glyfz.png" alt="Win10+Glyfz" style="zoom:90%;" /> 
-
-
+<br/>
 
 ## 1. 图标预览及下载
 
----
 
 ### 1.1 文件图标
 
@@ -62,13 +63,16 @@ Icon Group: [Download](./Filetype/Windows%2010%20Blue.zip)
 
 Icon Group: [Download](./Filetype/Windows%2010%20Default%20by_d93yxyk.zip)  
 
-Patch: [1900x64](7z1900x64 patch\7z.dll)   [2107x64](7z2107x64 patch\7z.dll) 
+Patch: [1900x64](./7z1900x64%20patch/7z.dll) &nbsp;&nbsp; [2107x64](./7z2107x64%20patch/7z.dll) 
 
 #### 1.1.03 7-Zip Original filetype
 
 <img src="./preview/filetype/7-Zip%20Original%20filetype.jpg" alt="7-Zip Original filetype" style="zoom:80%;" /> 
 
 Icon Group: [Download](./Filetype/7-Zip%20Original%20filetype.zip) 
+
+
+<br/>
 
 ### 1.2 工具栏图标
 
@@ -86,7 +90,7 @@ Icon Group: [Download](./Toolbar/Gion.zip)
 
 Icon Group: [Download](./Toolbar/Glyfz%202016.zip) 
 
-Patch: [1900x64](.\7z1900x64 patch\7zFM.exe)   [2107x64](.\7z2107x64 patch\7zFM.exe) 
+Patch: [1900x64](./7z1900x64%20patch/7zFM.exe) &nbsp;&nbsp; [2107x64](./7z2107x64%20patch/7zFM.exe) 
 
 #### 1.2.03 Nuvola
 
@@ -149,10 +153,10 @@ Icon Group: [Download](./Toolbar/Oxygen%20Refit.zip)
 Icon Group: [Download](./Toolbar/7-Zip%20Original%20Toolbar%20Theme.zip) 
 
 
+<br/>
 
 ## 2. 注册表
 
----
 
 <img alt='register' src="./preview/option.png" width="420"  > 
 
@@ -179,12 +183,10 @@ Windows Registry Editor Version 5.00
 ```
 
 
-
-
+<br/>
 
 ## 3. 特别声明
 
----
 
 1、本软件相关资源收集自互联网，版权归其开发厂商及作者所有。
 
