@@ -97,7 +97,7 @@ Icon Group: [Download](./Filetype/Windows%2010%20Blue.zip)
 
 Icon Group: [Download](./Filetype/Windows%2010%20Default%20by_d93yxyk.zip)  
 
-Patch: [1900x64](./7z1900x64%20patch/7z.dll) &nbsp;&nbsp; [2107x64](./7z2107x64%20patch/7z.dll) 
+Patch: [1900x64](./7z1900x64%20patch/7z.dll) &nbsp;&nbsp; [2107x64](./7z2107x64%20patch/7z.dll) &nbsp; [2201x64](./7z2201x64%20patch/7z.dll) 
 
 #### 1.1.03 7-Zip Original filetype
 
@@ -125,7 +125,7 @@ Icon Group: [Download](./Toolbar/Gion.zip)
 
 Icon Group: [Download](./Toolbar/Glyfz%202016.zip) 
 
-Patch: [1900x64](./7z1900x64%20patch/7zFM.exe) &nbsp;&nbsp; [2107x64](./7z2107x64%20patch/7zFM.exe) 
+Patch: [1900x64](./7z1900x64%20patch/7zFM.exe) &nbsp;&nbsp; [2107x64](./7z2107x64%20patch/7zFM.exe) &nbsp;  [2201x64](7z2201x64 patch/7zFM.exe) 
 
 #### 1.2.03 Nuvola
 
