@@ -1,5 +1,9 @@
 # <p align="center">7zip Theme</p>
 
+![Win10+Glyfz](./preview/Win10+Glyfz.png)
+
+---
+
 :earth_asia: [English](./readme.md) | [中文](./readme_cn.md) 
 <br/>
 
