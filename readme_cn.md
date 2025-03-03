@@ -1,8 +1,9 @@
+<p align="center">
+  <img src="./preview/Win10+Glyfz.png" alt="Win10+Glyfz" width="600" />
+</p>
+
 # <p align="center">7zip Theme</p>
 
-![Win10+Glyfz](./preview/Win10+Glyfz.png)
-
----
 
 :earth_asia: [English](./readme.md) | [中文](./readme_cn.md) 
 <br/>
