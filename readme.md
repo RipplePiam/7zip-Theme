@@ -25,7 +25,9 @@
 
 <a href="#register">2. Register</a> 
 
-<a href="#declaration">3. Declaration</a> 
+<a href="#restuner">3. ResTuner Tool (one-click patcher)</a> 
+
+<a href="#declaration">4. Declaration</a> 
 
 <br/>
 
@@ -64,6 +66,9 @@ If you like it too, you can find the corresponding resources, and their usage, f
 :two: Find and download the patch file for your favorite icon set (file icon or toolbar icon) below;
 
 :three: Copy the downloaded 7z.dll or 7zFM.exe file to the location where you installed 7-zip and replace the original file;
+
+> :zap: Would rather not do this by hand? [**ResTuner**](#restuner) does all three steps in one click — and keeps working for every new 7-Zip release.
+
 <br/>
 
 > :warning: You should first backup the original 7z.dll and 7zFM.exe files.
@@ -227,9 +232,50 @@ Windows Registry Editor Version 5.00
 
 <br/>
 
+<a id="restuner"/>
+
+## 3. ResTuner Tool (one-click patcher) :wrench:
+
+> Patch `7z.dll` + `7zFM.exe` in one click — no manual copying, and no hunting for a build that matches your installed 7-Zip version.
+
+**What it does**
+
+7-Zip's "retro" look lives entirely in PE resources:
+
+| File | Resource | Effect |
+|---|---|---|
+| `7z.dll` | `RT_ICON` + `RT_GROUP_ICON` (27 formats) | file icons in Explorer (`.7z`, `.zip`, `.rar`, …) |
+| `7zFM.exe` | `RT_BITMAP` #100–106 / #150–156 | the 7 toolbar buttons (large & small) |
+
+The stock icons are only 32×32 / 16×16 at 8 bpp. ResTuner replaces them with **8 sizes** per format
+(256/64/48/40/32/24/20/16, 32 bpp, 256 as PNG), using the Windows 10 Default filetype set plus the Glyfz 2016 toolbar set.
+
+**Features**
+
+* **One click** — finds your 7-Zip folder, inspects it, backs up, patches, self-checks, writes back
+* **Follows new releases** — the extension → icon-index map is read from the target file's own `RT_STRING`,
+  so formats added in a future 7-Zip version are picked up automatically
+* **Verified versions** — `25.01` and `26.05` (with a structure-fingerprint check); unknown versions run in adaptive mode and ask for confirmation
+* **Minimal diff** — `7zFM.exe` is patched in place (section table untouched); only `7z.dll` gets its `.rsrc` rebuilt
+* **Safe** — refuses to write unless the output re-parses and every untouched resource stays byte-identical,
+  auto-backs up to `.restuner-backup\` with one-click restore
+* **No dependencies** — pure Python standard library
+
+**Download and use**
+
+1. Grab `ResTuner.exe` from [Releases](https://github.com/RipplePiam/7zip-Theme/releases/latest) — a single file, no Python needed.
+   (Or run from source with `ResTuner/run_gui.bat`.)
+2. Install 7-Zip as usual, then launch ResTuner. Run it as administrator if it needs to write into `C:\Program Files`.
+3. Click **Apply theme**, then refresh the icon cache when prompted.
+
+<img src="./ResTuner/docs/gui.png" alt="ResTuner" width="620" />
+
+Source: [`ResTuner/`](./ResTuner) · Docs: [`ResTuner/README.md`](./ResTuner/README.md) · Release notes: [`ResTuner/docs/RELEASE_NOTES_v1.0.0.md`](./ResTuner/docs/RELEASE_NOTES_v1.0.0.md)
+
+
 <a id="declaration"/>
 
-## 3. Declaration
+## 4. Declaration
 
 1、The resources related to this software are collected from the Internet, and the copyright belongs to its developer and author.
 
