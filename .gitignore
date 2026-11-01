@@ -1,0 +1,18 @@
+# ---- IDE / 编辑器 ----
+.idea/
+.vs/
+*.suo
+*.user
+
+# ---- 构建 / 运行产物 ----
+build/
+dist/
+out/
+
+# ---- 系统 / 临时文件 ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+*.log
