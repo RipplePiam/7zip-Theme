@@ -24,7 +24,9 @@
 
 <a href="#register">2. 注册表</a> 
 
-<a href="#declaration">3. 特别声明</a> 
+<a href="#restuner">3. ResTuner 工具（一键补丁）</a> 
+
+<a href="#declaration">4. 特别声明</a> 
 
 <br/>
 
@@ -55,6 +57,9 @@
 :two: 在下方找到并下载你喜欢的图标组 ( 文件图标或工具栏图标 ) 补丁文件;
 
 :three: 将下载好的 7z.dll 或 7zFM.exe 文件拷贝到你安装 7-zip 的地方，并替换原有文件;
+
+> :zap: 不想手动做这三步？[**ResTuner**](#restuner) 一键就能完成——而且以后 7-Zip 出新版本也照样能用。
+
 <br/>
 
 > :warning: 你最好先备份原有的 7z.dll 和 7zFM.exe 文件；
@@ -216,9 +221,51 @@ Windows Registry Editor Version 5.00
 
 <br/>
 
+<a id="restuner"/>
+
+## 3. ResTuner 工具（一键补丁） :wrench:
+
+> 一键改完 `7z.dll` + `7zFM.exe`，不用手动拷文件，也不用到处找和你的 7-Zip 版本匹配的补丁。
+
+**它做了什么**
+
+7-Zip 那套"复古"界面，其实全是 PE 文件里的资源：
+
+| 文件 | 资源 | 效果 |
+|---|---|---|
+| `7z.dll` | `RT_ICON` + `RT_GROUP_ICON`（27 种格式） | 资源管理器里的文件图标（`.7z`、`.zip`、`.rar`…） |
+| `7zFM.exe` | `RT_BITMAP` #100–106 / #150–156 | 文件管理器的 7 个工具栏按钮（大、小两套） |
+
+原版每个格式只有 32×32 / 16×16、8 位色的两个小图标。ResTuner 会换成每种格式 **8 个尺寸**
+（256/64/48/40/32/24/20/16，32 位色，256 用 PNG 压缩），用的是 `Windows 10 Default` 文件图标
++ `Glyfz 2016` 工具栏图标这一套组合。
+
+**特性**
+
+* **一键完成** —— 自动找到 7-Zip 目录 → 体检 → 备份 → 打补丁 → 自检 → 写回
+* **跟得上新版本** —— 扩展名与图标索引的对应关系直接从目标文件自己的 `RT_STRING` 里读，
+  7-Zip 以后新增的格式会自动跟着换
+* **已验证版本** —— `25.01`、`26.05`（附带结构指纹校验）；没见过的版本走自适应模式，需要你确认
+* **改动最小** —— `7zFM.exe` 是等尺寸原地覆盖（节表都不动）；只有 `7z.dll` 会重建 `.rsrc`
+* **安全** —— 产出先重新解析、确认未参与替换的资源逐字节未变才落盘；
+  自动备份到 `.restuner-backup\`，可一键还原
+* **零依赖** —— 只用 Python 标准库
+
+**下载与使用**
+
+1. 从 [Releases](https://github.com/RipplePiam/7zip-Theme/releases/latest) 下载 `ResTuner.exe`
+   —— 单文件，目标机器不需要装 Python。（也可以用源码跑：`ResTuner/run_gui.bat`）
+2. 照常安装 7-Zip，然后启动 ResTuner；如果要写 `C:\Program Files`，请用管理员身份运行。
+3. 点 **应用主题**，按提示刷新图标缓存即可。
+
+<img src="./ResTuner/docs/gui.png" alt="ResTuner" width="620" />
+
+源码：[`ResTuner/`](./ResTuner) · 文档：[`ResTuner/README_cn.md`](./ResTuner/README_cn.md) · 发布说明：[`ResTuner/docs/RELEASE_NOTES_v1.0.0.md`](./ResTuner/docs/RELEASE_NOTES_v1.0.0.md)
+
+
 <a id="declaration"/>
 
-## 3. 特别声明
+## 4. 特别声明
 
 
 1、本软件相关资源收集自互联网，版权归其开发厂商及作者所有。
