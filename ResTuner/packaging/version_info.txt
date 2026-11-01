@@ -1,0 +1,33 @@
+# Windows 版本资源（PyInstaller 通过 --version / spec 的 version= 使用）
+VSVersionInfo(
+    ffi=FixedFileInfo(
+        filevers=(1, 0, 0, 0),
+        prodvers=(1, 0, 0, 0),
+        mask=0x3F,
+        flags=0x0,
+        OS=0x40004,
+        fileType=0x1,
+        subtype=0x0,
+        date=(0, 0),
+    ),
+    kids=[
+        StringFileInfo(
+            [
+                StringTable(
+                    "080404B0",
+                    [
+                        StringStruct("CompanyName", "ResTuner"),
+                        StringStruct("FileDescription", "7-Zip 主题一键补丁工具"),
+                        StringStruct("FileVersion", "1.0.0.0"),
+                        StringStruct("InternalName", "ResTuner"),
+                        StringStruct("LegalCopyright", "MIT License; 主题素材版权归原作者"),
+                        StringStruct("OriginalFilename", "ResTuner.exe"),
+                        StringStruct("ProductName", "ResTuner"),
+                        StringStruct("ProductVersion", "1.0.0.0"),
+                    ],
+                )
+            ]
+        ),
+        VarFileInfo([VarStruct("Translation", [2052, 1200])]),
+    ],
+)
