@@ -1,0 +1,18 @@
+# 统一换行符，避免 Windows 上改好的 bat 被 git 换回 LF
+* text=auto
+
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+*.cmd  text eol=crlf
+*.py   text eol=lf
+*.md   text eol=lf
+*.toml text eol=lf
+*.spec text eol=lf
+*.yml  text eol=lf
+
+# 二进制：不做换行转换，不尝试 diff
+*.ico  binary
+*.bmp  binary
+*.png  binary
+*.exe  binary
+*.dll  binary

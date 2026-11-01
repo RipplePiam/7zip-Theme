@@ -1,0 +1,2 @@
+﻿# ResTuner 1.0 起零第三方依赖，只需 Python 3.9+ 标准库（tkinter 已随官方安装包提供）。
+# 若提示缺少 tkinter，请在安装 Python 时勾选 tcl/tk 组件。

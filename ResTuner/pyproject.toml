@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "restuner"
+version = "1.0.0"
+description = "7-Zip 主题一键补丁工具：按官方新版自动替换文件类型图标与工具栏位图"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+# 零第三方依赖：只用标准库（tkinter / struct / hashlib / winreg）
+dependencies = []
+
+[project.scripts]
+restuner = "restuner.gui.app:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
